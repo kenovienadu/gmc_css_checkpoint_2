@@ -1,0 +1,24 @@
+{
+  "name": "css_layout_project",
+  "version": "1.0.0",
+  "description": "simple clone of docsplanner website",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "yarn test",
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./src/assets/css/output.css",
+    "dev": "yarn serve src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenovienadu/gmc_css_checkpoint_2.git"
+  },
+  "author": "Ken Ovienadu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenovienadu/gmc_css_checkpoint_2/issues"
+  },
+  "homepage": "https://github.com/kenovienadu/gmc_css_checkpoint_2#readme",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
