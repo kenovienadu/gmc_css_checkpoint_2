@@ -14,6 +14,13 @@ h1, h2 {
   letter-spacing: -.3px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -39,6 +46,10 @@ h1, h2 {
   color: whitesmoke;
 }
 
+.bg-light {
+  background-color: #DBF7F7;
+}
+
 .lead p {
   margin: .8em 0;
   line-height: 1.75;
@@ -59,4 +70,22 @@ h1, h2 {
   line-height: 1.2;
   margin: 0;
   color: #fff;
+}
+
+.info-card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.info-section img.background {
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  z-index: 1;
+  left: 60px;
 }
