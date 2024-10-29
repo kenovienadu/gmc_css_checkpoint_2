@@ -19,15 +19,21 @@
 <body>
   <!-- TOP NAV -->
   <header class="">
-    <div class="container flex justify-between py-8">
+    <div class="container flex justify-between items-center py-8">
       <div class="logo">
-        <img class="w-[263px]" src="assets/img/docplanner.svg" alt="" srcset="">
+        <img class="w-[150px] md:w-[263px]" src="assets/img/docplanner.svg" alt="" srcset="">
       </div>
   
-      <div class="inline-flex gap-4">
+      <div class="hidden md:inline-flex gap-4">
         <a class="text-primary cursor-pointer">About Us</a>
         <a class="text-gray-400 cursor-pointer">Career</a>
         <a class="text-gray-400 cursor-pointer">Departments</a>
+      </div>
+
+      <div class="hamburger inline-flex md:hidden">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   </header>
@@ -41,7 +47,7 @@
       <h1>Making the healthcare experience more human</h1>
     </div>
 
-    <div class="grid grid-cols-2 gap-3 mt-[60px] text-gray-500 lead">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-[60px] text-gray-500 lead">
       <p>
         We want patients to find the perfect doctor and book an appointment in the most easy way. 
         The patient journey should be enjoyable, and that's why we are always next to them: to help 
@@ -55,7 +61,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-3 gap-5 mt-[90px] text-gray-600 services">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-[90px] text-gray-600 services">
       <div class="bg-primary rounded-md p-8">
         <div>
           <img src="assets/img/icons/icon-patients.svg" class="w-[24px]" alt="" srcset="">
@@ -100,15 +106,18 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-3 pt-[20px]">
+    <div class="grid grid-cols-1 md:grid-cols-3 pt-[20px]">
       <div class="text-primary pt-[45px]"> 
-        <h1 class="text-2xl pr-[100px]">
+        <h1 class="text-2xl md:pr-[100px] text-center md:text-left">
           We are a global company with local culture
         </h1>
       </div>
 
       <div class="col-span-2">
-        <img src="assets/img/brands.png" alt="" srcset="">
+        <div class="flex justify-center items-center" >
+          <img class="hidden md:block" src="assets/img/brands.png" alt="" srcset="">
+          <img class="md:hidden" src="assets/img/brands-mobile.png" alt="" srcset="">
+        </div>
       </div>
     </div>
   </section>
@@ -116,55 +125,55 @@
   <section class="bg-light mt-[30px] pt-[20px] info-section relative">
     <img class="background" src="assets/img/docplanner-bg.png" alt="">
 
-    <div class="container grid grid-cols-2">
-      <div class="pt-[60px] pr-[100px]">
+    <div class="container grid grid-cols-1 md:grid-cols-2">
+      <div class="pt-[60px] md:pr-[100px]">
         <h1 class="text-primary text-4xl mb-7">The world's biggest healthcare platform</h1>
-        <p class="text-gray-500 pt-2">
+        <p class="text-gray-500 pt-2 pb-4">
           We work from 11 offices all over the world, bringing Docplanner Group to life in 13 countries.
         </p>
       </div>
 
-      <div class="inline-grid grid-cols-2 gap-5">
+      <div class="inline-grid grid-cols-2 mb-10 md:grid-cols-2 gap-2 md:gap-5">
         <div class="pt-8">
-          <div class="bg-white rounded mb-5 h-[270px] p-3 info-card shadow">
+          <div class="bg-white rounded mb-2 md:mb-5 h-[200px] md:h-[270px] p-3 info-card shadow">
             <img src="assets/img/icons/flag.png" alt="" srcset="">
-            <h3 class="text-center text-primary text-[24px]">
+            <h3 class="text-center text-primary text-sm md:text-[24px]">
               Leader in 13 countries
             </h3>
-            <p class="text-sm text-center text-gray-500 mt-2">
+            <p class="text-xs md:text-sm text-center text-gray-500 mt-2">
               Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, 
               Czech Republic, Portugal, Argentina, Peru and Chile
             </p>
           </div>
 
-          <div class="bg-white rounded mb-5 h-[270px] p-3 info-card">
+          <div class="bg-white rounded mb-2 md:mb-5 h-[200px] md:h-[270px]p-3 info-card">
             <img src="assets/img/icons/patients.png" alt="" srcset="">
-            <h3 class="text-center text-primary text-[24px]">
+            <h3 class="text-center text-primary text-sm md:text-[24px]">
               90,000,000 <br> patients
             </h3>
-            <p class="text-sm text-center text-gray-500 mt-2">
+            <p class="text-xs md:text-sm  text-center text-gray-500 mt-2">
               visit our websites each month
             </p>
           </div>
         </div>
 
         <div>
-          <div class="bg-white rounded mb-5 h-[270px] p-3 info-card">
+          <div class="bg-white rounded mb-2 md:mb-5 h-[200px] md:h-[270px] p-3 info-card">
             <img src="assets/img/icons/visits.png" alt="" srcset="">
-            <h3 class="text-center text-primary text-[24px]">
+            <h3 class="text-center text-primary text-sm md:text-[24px]">
               22,000,000 appointments
             </h3>
-            <p class="text-sm text-center text-gray-500 mt-2">
+            <p class="text-xs md:text-sm  text-center text-gray-500 mt-2">
               booked last month
             </p>
           </div>
 
-          <div class="bg-white rounded mb-5 h-[270px] p-3 info-card">
+          <div class="bg-white rounded mb-2 md:mb-5 h-[200px] md:h-[270px] p-3 info-card">
             <img src="assets/img/icons/doctors.png" alt="" srcset="">
-            <h3 class="text-center text-primary text-[24px]">
+            <h3 class="text-center text-primary text-sm md:text-[24px]">
               260,000 active doctors
             </h3>
-            <p class="text-sm text-center text-gray-500 mt-2">
+            <p class="text-xs md:text-sm  text-center text-gray-500 mt-2">
               trust our solutions
             </p>
           </div>
@@ -173,10 +182,11 @@
     </div>
   </section>
 
+  <!-- OFFICES Section -->
   <section class="container pt-[100px]">
-    <div class="w-[500px] text-center mx-auto">
+    <div class="w-full md:w-[500px] text-center mx-auto">
       <h1 class="text-3xl mb-4 text-primary">Improve the lives of millions. Change yours forever.</h1>
-      <p class="text-sm">
+      <p class="text-sm text-gray-500">
         More than 2800 team mates share our same vision, goals and passion. 
         With offices in Amsterdam (HQ), Warsaw, Barcelona, Munich, Istanbul, 
         Rome, Rio, Bologna, Mexico City and Curitiba, our search for great talent never stops.
@@ -184,7 +194,7 @@
     </div>
 
     <!-- Cities Grid -->
-    <div class="grid grid-cols-3 gap-5 offices mt-[70px]">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 offices mt-[70px]">
 
       <!-- City Grid Item -->
       <div class="item">
@@ -333,8 +343,8 @@
   </section>
 
   <section class="mt-[100px]" >
-    <div class="flex flex-col justify-center items-center gap-6">
-      <h3 class="text-3xl">Sounds interesting? Join us now!</h3>
+    <div class="flex flex-col justify-center items-center gap-6 container">
+      <h3 class="text-3xl text-center">Sounds interesting? Join us now!</h3>
       <button class="bg-secondary uppercase text-sm font-medium p-3 rounded">
         See All Current Openings
       </button>
@@ -342,7 +352,7 @@
   </section>
 
   <footer class="text-center py-8 text-sm">
-    <div>
+    <div class="container">
       <span>We are leaders in 13 countries:</span>
       <span class="text-blue-500">Poland,</span>
       <span class="text-blue-500">Spain,</span>
