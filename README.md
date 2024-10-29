@@ -2,7 +2,7 @@ Here's a simple README template for a website project built using HTML, CSS, and
 
 ---
 
-# Project Name
+# DocsPlanner Clone
 
 A Simple Clone fo the docsplanner website (www.docsplanner.com)
 
