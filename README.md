@@ -34,7 +34,7 @@ To get a local copy up and running, follow these steps:
 
 ## Usage
 
-This project is a simple, static website that showcases a [brief description, e.g., personal portfolio, product page, blog, etc.]. It includes responsive styles powered by Tailwind CSS for a clean and modern design.
+This project is a simple, static website clone of www.docsplanner.com. It includes responsive styles powered by Tailwind CSS for a clean and modern design.
 
 ## Technologies
 
@@ -58,7 +58,3 @@ project-name/
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-This template provides a straightforward overview of your project and will help others understand how to use and contribute to it.
