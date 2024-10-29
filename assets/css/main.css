@@ -39,6 +39,12 @@ h1, h2 {
   color: whitesmoke;
 }
 
+.lead p {
+  margin: .8em 0;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
 
 .services h1 {
   font-size: 1.625em;
